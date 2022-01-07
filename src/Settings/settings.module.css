@@ -1,0 +1,310 @@
+@media (prefers-color-scheme: light) {
+    .container {
+        background: var(--base-ultralight-grey);
+    }
+    .pageContainer {
+        background: #fff;
+    }
+    .copyright {
+        color: var(--base-dark-grey);
+    }
+    .title {
+        color: var(--base-black);
+    }
+    .tipContainer {
+        background: var(--base-ultralight-grey);
+    }
+    .tipTitle {
+        color: var(--base-ultradark-grey);
+    }
+    .tipText {
+        color: var(--base-dark-grey);
+    }
+}
+
+[data-theme="light"] .container {
+    background: var(--base-ultralight-grey);
+}
+
+[data-theme="light"] .pageContainer {
+    background: #fff;
+}
+
+[data-theme="light"] .copyright {
+    color: var(--base-dark-grey);
+}
+
+[data-theme="light"] .title {
+    color: var(--base-black);
+}
+
+[data-theme="light"] .tipContainer {
+    background: var(--base-ultralight-grey);
+}
+
+[data-theme="light"] .tipTitle {
+    color: var(--base-ultradark-grey);
+}
+
+[data-theme="light"] .tipText {
+    color: var(--base-dark-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background: #292B2D;
+    }
+    .pageContainer {
+        background: #202124;
+    }
+    .copyright {
+        color: var(--base-light-grey);
+    }
+    .title {
+        color: #fff;
+    }
+    .tipContainer {
+        background: var(--base-ultradark-grey);
+    }
+    .tipTitle {
+        color: var(--base-ultralight-grey);
+    }
+    .tipText {
+        color: var(--base-light-grey);
+    }
+}
+
+[data-theme="dark"] .container {
+    background: #292B2D;
+}
+
+[data-theme="dark"] .pageContainer {
+    background: #202124;
+}
+
+[data-theme="dark"] .copyright {
+    color: var(--base-light-grey);
+}
+
+[data-theme="dark"] .title {
+    color: #fff;
+}
+
+[data-theme="dark"] .tipContainer {
+    background: var(--base-ultradark-grey);
+}
+
+[data-theme="dark"] .tipTitle {
+    color: var(--base-ultralight-grey);
+}
+
+[data-theme="dark"] .tipText {
+    color: var(--base-light-grey);
+}
+
+@media (max-width: 1199px) {
+    .pageContent {
+        margin-left: 0;
+    }
+    .pageContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+    .copyrightContainer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .contDrop{
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pageContent {
+        margin-left: 72px;
+    }
+    .pageContainer {
+        padding-left: 40px;
+        padding-right: 240px;
+        padding-top: 125px;
+    }
+    .copyrightContainer {
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .left {
+        width: 100%;
+        min-width: 780px;
+        max-width: 780px;
+    }
+    .right {
+        display: block;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .contDrop{
+        position: relative;
+        width:380px;
+    }
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 40px;
+}
+
+.copyrightContainer {
+    display: flex;
+}
+
+.copyright {
+    font-size: var(--body-primary-sm);
+}
+
+.copyButton {
+    color: var(--primary);
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: var(--body-primary-sm);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.navigation {
+    color: var(--primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--body-primary-sm);
+}
+
+.title {
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.right {
+    width: 100%;
+}
+
+.formSession {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--base-grey);
+    font-size: var(--body-secondary);
+}
+
+.tipContainer {
+    padding: 30px;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tipTitleContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.tipImg {
+    width: 25px;
+    height: 25px;
+}
+
+.tipTitle {
+    font-size: var(--body-primary);
+    font-weight: bold;
+}
+
+.tipTextContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.tipText {
+    font-size: var(--body-primary-sm);
+}
+
+
+
+.contStateModal{
+    width: 100vw;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+}

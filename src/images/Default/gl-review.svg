@@ -1,0 +1,20 @@
+<svg id="gl-review" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25.003" viewBox="0 0 25 25.003">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09f"/>
+      <stop offset="0.469" stop-color="#00dcff"/>
+      <stop offset="1" stop-color="#00dcff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5105" data-name="Rectangle 5105" width="23.545" height="25" fill="#336"/>
+    </clipPath>
+  </defs>
+  <path id="Path_14874" data-name="Path 14874" d="M0,0H4.875V4.55h7.583V0H17V22H0Z" transform="translate(2 3)" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_5093" data-name="Rectangle 5093" width="25" height="25" transform="translate(0 0.003)" fill="none"/>
+  <g id="Group_5441" data-name="Group 5441" transform="translate(0.892)">
+    <g id="Group_5441-2" data-name="Group 5441" clip-path="url(#clip-path)">
+      <path id="Path_14872" data-name="Path 14872" d="M10.267,22.881H3.19a1.062,1.062,0,0,1-1.063-1.06V5.3A1.062,1.062,0,0,1,3.19,4.236H4.412V8.421h10.63V4.236h1.169A1.062,1.062,0,0,1,17.275,5.3V16.92l2.126-2.51V5.3a3.188,3.188,0,0,0-3.19-3.175H12.734a3.193,3.193,0,0,0-6.014,0H3.19A3.188,3.188,0,0,0,0,5.3v16.53A3.188,3.188,0,0,0,3.19,25H12.5ZM6.538,4.236H8.664V3.173a1.063,1.063,0,1,1,2.126,0V4.236h2.126V6.3H6.538Z" transform="translate(0 0)" fill="#336"/>
+      <path id="Path_14873" data-name="Path 14873" d="M84.956,105.328,78.2,112.849l-3.817-3.629-1.341,1.411L78.3,115.64l8.1-9.011Z" transform="translate(-62.855 -90.64)" fill="#336"/>
+    </g>
+  </g>
+</svg>

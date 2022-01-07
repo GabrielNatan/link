@@ -1,0 +1,119 @@
+@media (prefers-color-scheme: light) {
+    .topLabel {
+        color: var(--base-ultradark-grey);
+    }
+
+    .bottomLabel {
+        color: var(--base-ultradark-grey);
+    }
+
+    .input {
+        border: 1px solid var(--base-light-grey);
+        color: var(--base-black);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .topLabel {
+        color: #fff;
+    }
+
+    .bottomLabel {
+        color: var(--base-light-grey);
+    }
+
+    .input {
+        border: 1px solid var(--base-ultradark-grey);
+        color: var(--base-ultralight-grey);
+    }
+}
+
+[data-theme="light"] .topLabel {
+    color: var(--base-ultradark-grey);
+}
+[data-theme="light"] .input {
+    border: 1px solid var(--base-light-grey);
+    color: var(--base-black);
+}
+[data-theme="light"] .bottomLabel {
+    color: var(--base-ultradark-grey);
+}
+[data-theme="dark"] .topLabel {
+    color: #fff;
+}
+[data-theme="dark"] .input {
+    border: 1px solid var(--base-ultradark-grey);
+    color: var(--base-ultralight-grey);
+}
+[data-theme="dark"] .bottomLabel {
+    color: var(--base-ultralight-grey);
+}
+
+.inputSecondaryContainer {
+    width: 100%;
+}
+
+.topLabel {
+    font-weight: bold;
+    font-size: var(--body-primary-sm);
+    padding-bottom: 10px;
+}
+
+.input {
+    height: 40px;
+    border-radius: 5px;
+    font-size: var(--body-secondary);
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.input::placeholder {
+    color: var(--base-grey);
+}
+
+.bottomLabel {
+    padding-top: 10px;
+    font-size: var(--body-secondary-sm);
+}
+
+.input:hover {
+    -webkit-box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2);
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+    -webkit-box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.2);
+}
+
+.input:disabled {
+    background: var(--base-ultralight-grey);
+    color: var(--base-grey);
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+.inputSecondaryContainer.failure .input {
+    border: 1px solid var(--warning-red);
+}
+
+.inputSecondaryContainer.failure .bottomLabel {
+    color: var(--warning-red);
+}
+
+.inputSecondaryContainer.success .input {
+    border: 1px solid var(--warning-green);
+}
+
+.inputSecondaryContainer.success .bottomLabel {
+    color: var(--warning-green);
+}
+
+.inputSecondaryContainer.hideBottom .bottomLabel {
+    display: none;
+}

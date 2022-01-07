@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="ico-org-disable" transform="translate(-103.5 -93.375)">
+    <g id="Component_381_17" data-name="Component 381 – 17" transform="translate(103.5 93.375)">
+      <rect id="Rectangle_5051" data-name="Rectangle 5051" width="25" height="25" fill="none"/>
+      <g id="Group_4887" data-name="Group 4887" transform="translate(0.325 2.708)">
+        <path id="Path_14297" data-name="Path 14297" d="M955.013,382.053h-1.442v-14.08h-6.188a.717.717,0,0,0-.725.707v13.373h-1.442V368.679a2.143,2.143,0,0,1,2.167-2.112h6.184v-5.972h12.669a2.789,2.789,0,0,1,2.821,2.75v18.692h-1.442V363.345A1.363,1.363,0,0,0,966.237,362H955.01Z" transform="translate(-945.216 -360.595)" fill="#b2bdc5"/>
+        <g id="Group_4888" data-name="Group 4888" transform="translate(2.262 4.589)">
+          <g id="Group_4889" data-name="Group 4889" transform="translate(0 0)">
+            <path id="Path_14298" data-name="Path 14298" d="M961.253,370.261h4.193v-4.194h-4.193Zm1.114-3.079h1.965v1.964h-1.965Z" transform="translate(-952.801 -366.067)" fill="#b2bdc5"/>
+            <path id="Path_14299" data-name="Path 14299" d="M961.253,379.925h4.193v-4.194h-4.193Zm1.114-3.079h1.965v1.964h-1.965Z" transform="translate(-952.801 -369.393)" fill="#b2bdc5"/>
+            <path id="Path_14300" data-name="Path 14300" d="M961.253,389.588h4.193v-4.194h-4.193Zm1.114-3.079h1.965v1.964h-1.965Z" transform="translate(-952.801 -372.72)" fill="#b2bdc5"/>
+            <path id="Path_14301" data-name="Path 14301" d="M948.364,379.925h4.194v-4.194h-4.194Zm1.114-3.079h1.965v1.964h-1.965Z" transform="translate(-948.364 -369.393)" fill="#b2bdc5"/>
+            <path id="Path_14302" data-name="Path 14302" d="M948.364,389.588h4.194v-4.194h-4.194Zm1.114-3.079h1.965v1.964h-1.965Z" transform="translate(-948.364 -372.72)" fill="#b2bdc5"/>
+            <path id="Path_14303" data-name="Path 14303" d="M969.706,370.261H973.9v-4.194h-4.194Zm1.114-3.079h1.965v1.964H970.82Z" transform="translate(-955.711 -366.067)" fill="#b2bdc5"/>
+            <path id="Path_14304" data-name="Path 14304" d="M969.706,379.925H973.9v-4.194h-4.194Zm1.114-3.079h1.965v1.964H970.82Z" transform="translate(-955.711 -369.393)" fill="#b2bdc5"/>
+            <path id="Path_14305" data-name="Path 14305" d="M969.706,389.588H973.9v-4.194h-4.194Zm1.114-3.079h1.965v1.964H970.82Z" transform="translate(-955.711 -372.72)" fill="#b2bdc5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

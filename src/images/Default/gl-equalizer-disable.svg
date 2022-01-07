@@ -1,0 +1,18 @@
+<svg id="gl-equalizer-disable" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <rect id="Rectangle_4943" data-name="Rectangle 4943" width="25" height="25" fill="none"/>
+  <g id="Group_2125" data-name="Group 2125" transform="translate(9.245 0.208)">
+    <g id="Group_2124" data-name="Group 2124">
+      <path id="Path_130" data-name="Path 130" d="M199.874,13.531V0h-1.937V13.531a2.9,2.9,0,0,0,0,5.477v5.783h1.937V19.008a2.9,2.9,0,0,0,0-5.477Zm-.968,3.707a.968.968,0,1,1,.968-.968A.97.97,0,0,1,198.905,17.238Z" transform="translate(-196)" fill="#b2bdc5"/>
+    </g>
+  </g>
+  <g id="Group_2127" data-name="Group 2127" transform="translate(0.336 0.208)">
+    <g id="Group_2126" data-name="Group 2126">
+      <path id="Path_131" data-name="Path 131" d="M15.874,4.234V0H13.937V4.234a2.9,2.9,0,0,0,0,5.477v15.08h1.937V9.711a2.9,2.9,0,0,0,0-5.477Zm-.968,3.707a.968.968,0,1,1,.968-.968A.97.97,0,0,1,14.905,7.941Z" transform="translate(-12)" fill="#b2bdc5"/>
+    </g>
+  </g>
+  <g id="Group_2129" data-name="Group 2129" transform="translate(18.155 0.208)">
+    <g id="Group_2128" data-name="Group 2128">
+      <path id="Path_132" data-name="Path 132" d="M383.874,8.108V0h-1.937V8.108a2.9,2.9,0,0,0,0,5.477V24.792h1.937V13.585a2.9,2.9,0,0,0,0-5.477Zm-.968,3.707a.968.968,0,1,1,.968-.968A.97.97,0,0,1,382.905,11.815Z" transform="translate(-380)" fill="#b2bdc5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,228 @@
+@media (prefers-color-scheme: light) {
+    .container {
+        border: 1px solid var(--base-light-grey);
+    }
+    .titleContainer {
+        /* border-bottom: 1px solid var(--base-light-grey); */
+    }
+    .thead {
+        background: var(--base-ultralight-grey);
+    }
+    .title {
+        color: var(--base-black); 
+    }
+    .head {
+        color: var(--base-ultradark-grey);
+    }
+    .roleTitle {
+        color: var(--base-black);
+    }
+    .body {
+        border-bottom: 1px solid var(--base-light-grey);
+    }
+}
+
+[data-theme="light"] .container {
+    border: 1px solid var(--base-light-grey);
+}
+[data-theme="light"] .titleContainer {
+    /* border-bottom: 1px solid var(--base-light-grey); */
+}
+[data-theme="light"] .thead {
+    background: var(--base-ultralight-grey);
+}
+[data-theme="light"] .title {
+    color: var(--base-black); 
+}
+[data-theme="light"] .head {
+    color: var(--base-ultradark-grey);
+}
+[data-theme="light"] .roleTitle {
+    color: var(--base-black);
+}
+[data-theme="light"] .body {
+    border-bottom: 1px solid var(--base-light-grey);
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        border: 1px solid var(--base-ultradark-grey);
+    }
+    .titleContainer {
+        /* border-bottom: 1px solid var(--base-ultradark-grey); */
+    }
+    .thead {
+        background: #292B2D;
+    }
+    .title {
+        color: #fff; 
+    }
+    .head {
+        color: #fff;
+    }
+    .roleTitle {
+        color: #fff;
+    }
+    .body {
+        border-bottom: 1px solid var(--base-ultradark-grey);
+    }
+}
+
+[data-theme="dark"] .container {
+    border: 1px solid var(--base-ultradark-grey);
+}
+[data-theme="dark"] .titleContainer {
+    /* border-bottom: 1px solid var(--base-ultradark-grey); */
+}
+[data-theme="dark"] .thead {
+    background: #292B2D;
+}
+[data-theme="dark"] .title {
+    color: #fff; 
+}
+[data-theme="dark"] .head {
+    color: #fff;
+}
+[data-theme="dark"] .roleTitle {
+    color: #fff;
+}
+[data-theme="dark"] .body {
+    border-bottom: 1px solid var(--base-ultradark-grey);
+}
+
+@media (max-width: 1199px) {
+    .container {
+        overflow: auto;
+    }
+    .head {
+        padding-top: 30px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+    }
+    .body {
+        padding: 15px 20px;
+    }
+    .table {
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 1200px) {
+    .head {
+        min-width: 200px;
+        padding-top: 30px;
+        padding-bottom: 14px;
+        padding-left: 30px;
+    }
+    .body {
+        padding: 15px 30px;
+    }
+}
+
+.container {
+    border-radius: 5px;
+    flex:1;
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+}
+.contAcordeon{
+    border-bottom: 1px solid var(--base-light-grey);
+
+}
+.contTop{
+    padding: 20px;
+    display: flex;
+}
+
+.title{
+    flex:1;
+}
+
+.title strong{
+    font-size:  var(--body-secondary);
+    color: var(--base-grey);
+    text-transform: uppercase;
+}
+
+.togglrButton{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.togglrButton .contButton{
+    border: 2px solid var(--base-light-grey);
+    width: 38px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--base-light-grey);
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+
+.contButton .circleButton{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: inline-block;
+    transition: 300ms;
+}
+.contButton.active{
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+}
+.contButton.active > .circleButton{
+    left: 13px;
+}
+
+
+.dataCont{
+    width: 100%;
+    height: 0px;
+    overflow: auto;
+    transition: 300ms;
+}
+
+.dataCont.active{
+    height: auto;
+    max-height: auto;
+}
+.arrow{
+transition: 300ms;
+}
+.arrow.active{
+    transform: rotate(90deg);
+}
+
+.list{
+    width: 100%;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.itemList{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--base-light-grey);
+    padding: 9px 0;
+}
+.itemList span{
+    color: var(--base-grey);
+}
+.itemList:hover{
+    background-color: var(--base-ultralight-grey);
+}
+.itemList:last-child{
+    border-bottom: none;
+}
+
+.itemList .togglrButton{
+    margin-right: 35px;
+}
