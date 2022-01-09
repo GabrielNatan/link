@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Modal from '../src/Components/ModalOrganization'
+import Modal from '../src/Components/ModalUser'
 function App() {
   const [open,setOpen] = useState(false)
   return (
