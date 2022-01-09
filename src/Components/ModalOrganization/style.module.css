@@ -136,7 +136,9 @@
 .contIco img.color{
     opacity: 0;
 }
-
+.contIco img.color.default{
+    opacity: 1;
+}
 .icons strong{
     font-size:var(--body-secondary-sm);
     text-align: center;

@@ -27,17 +27,28 @@ const ModalOrganization = () => {
 
     
     function selectTwo(add,remove){
-        let a = document.querySelector("#target")
+        let a = document.querySelector("#target");
+        let equalizeDefault = document.querySelector("#equalizeDefault");
+        let equalize = document.querySelector("#equalize");
         a.classList.remove(Styles[remove])
         a.classList.add(Styles[add])
+        equalizeDefault.classList.remove(Styles.default)
+        equalizeDefault.classList.add(Styles.color)
+        equalize.classList.add(Styles.default)
     }
 
     
     function selectThree(add,remove){
         let a = document.querySelector("#target")
+        let infoDefault = document.querySelector("#infoDefault");
+        let info = document.querySelector("#info");
         a.classList.remove(Styles[remove])
         a.classList.add(Styles[add])
+        infoDefault.classList.remove(Styles.default)
+        infoDefault.classList.add(Styles.color)
+        info.classList.add(Styles.default)
     }
+
 
     function buttons(step){
         let next = document.querySelector("#nextButton")
@@ -72,15 +83,15 @@ const ModalOrganization = () => {
                                 </div>
                                 <div className={Styles.icons}>
                                     <div  onClick={()=>{selectTwo("stepTwo","stepThree");buttons("dois")}} className={Styles.contIco}>
-                                        <img className={Styles.color} src={Equalizer} alt="organization"/>
-                                        <img className={Styles.default} src={EqualizerDefault} alt="organization disabled"/>
+                                        <img id="equalize" className={Styles.color} src={Equalizer} alt="organization"/>
+                                        <img id="equalizeDefault" className={Styles.default} src={EqualizerDefault} alt="organization disabled"/>
                                     </div>
                                         <strong>Configure solutions</strong>
                                 </div>
                                 <div className={Styles.icons}>
                                     <div  onClick={()=>{selectThree("stepThree","stepTwo");buttons("tres")}} className={Styles.contIco}>
-                                        <img className={Styles.color} src={Review} alt="organization"/>
-                                        <img className={Styles.default} src={ReviewDefault} alt="organization disabled"/>
+                                        <img id="info" className={Styles.color} src={Review} alt="organization"/>
+                                        <img id="infoDefault" className={Styles.default} src={ReviewDefault} alt="organization disabled"/>
                                     </div>    
                                     <strong>Review info</strong>
                                 </div>
