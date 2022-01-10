@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container th{
+    color: var(--base-ultradark-grey);
+    font-size: var(--body-primary-sm);
+    text-align: left;
+}
+
+.container td{
+    overflow: hidden;
+    font-size: var(--body-primary-sm);
+    padding: 5px 0;
+}
+.container tbody tr{
+    border-bottom: 1px solid var(--base-grey);
+}
+
+.container td strong{
+    color: var(--base-black)
+}
+.container td span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--warning-red);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.container td span.active{
+    background-color: var(--warning-green);
+}
