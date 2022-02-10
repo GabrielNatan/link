@@ -1,22 +1,10 @@
 import {useState,useEffect} from "react"
 import Styles from './lineChartRealTime.module.css'
 import * as d3 from "d3"
-var dataset = [
-    {month: "Jan", pizzas: 10000},
-    {month: "Feb", pizzas: 20000},
-    {month: "Mar", pizzas: 40000},
-    {month: "Apr", pizzas: 30000},
-    {month: "May", pizzas: 30000},
-    {month: "Jun", pizzas: 50000},
-    {month: "Jul", pizzas: 30000},
-    {month: "Aug", pizzas: 50000},
-    {month: "Sep", pizzas: 60000},
-    {month: "Oct", pizzas: 20000},
-    {month: "Nov", pizzas: 10000},
-    {month: "Dec", pizzas: 90000},
-];
+let num  = 0;
+let aux = []
 function LineChartRealTime({ data }) {
-
+    const [dataset, setDataset] = useState(aux);
     function createChart(){
         
 
@@ -33,7 +21,7 @@ var y = d3.scaleLinear()
 
 var svg = d3.select("#contRealTime").append("svg")
     .style("background-color", '#888')
-    .attr("width", width + margin.left + margin.right)
+    .attr("width", width + margin.left + margin.right )
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -74,20 +62,58 @@ var svg = d3.select("#contRealTime").append("svg")
   svg.selectAll(".bar")
       .data(dataset)
       .enter().append("rect")
+      .attr("width","300px")
       .attr("class", "bar")
       .attr("x", function(d) { return x(d.month); })
       .attr("width", x.bandwidth())
       .attr("y", function(d) { return y(d.pizzas); })
-      .attr("height", function(d) { return height - y(d.pizzas); });
-
-
+      .attr("height", function(d) { return height - y(d.pizzas); })
+      .transition()
+    .duration(500)
+    .style("transform","tranlateX("+ 30 * num + ")" )
 
 // See also :
     }
+    let obj = {
+        "jan":{month:"feb",pizzas:"30000"},
+        "feb":{month:"mar",pizzas:"90000"},
+        "mar":{month:"apr",pizzas:"1000"},
+        "apr":{month:"may",pizzas:"40000"},
+        "may":{month:"jul",pizzas:"9000"},
+        "jul":{month:"jun",pizzas:"9000"},
+        "jun":{month:"ago",pizzas:"19000"},
+        "ago":{month:"sep",pizzas:"5000"},
+        "sep":{month:"out",pizzas:"7000"},
+        "out":{month:"nov",pizzas:"5000"},
+        "nov":{month:"dec",pizzas:"2000"},
+        "dec":{month:"jan",pizzas:"7000"},
+    }
+
 
     useEffect(() => {
         createChart()
+        setInterval(()=>{
+            let um = Object.keys(obj)[num]
+            console.log(aux)
+            console.log("Real Time", dataset)
+            aux.push({month:new Date().getMinutes(),pizzas:Math.random()*100})
+            if(num > 10){
+                aux.shift()
+            }
+            setDataset(d => [...dataset,{month:new Date().getMinutes(),pizzas:Math.random()*100}])
+           
+            num = num + 1
+        
+        },1000 * 60)
     }, [])
+
+    useEffect(()=>{
+        let el = document.querySelector("#contRealTime")
+        if(el){
+            el.innerHTML = ""
+        }
+        createChart()
+    },[dataset])
 
     return (
         <div id="contRealTime" className={Styles.container}>

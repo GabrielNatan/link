@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    max-width: 225px;
+    height: 106px;
+    border-radius: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.container.navy{
+    background-color: var(--secondary-navy);
+}
+
+.container.grey{
+    background-color: var(--base-ultralight-grey);
+}
+
+.container.primary{
+    background-color: var(--primary);
+}
+
+.subtitle{
+    font-size:var(--body-secondary);
+    color: var(--white)
+}
+
+.title{
+    font-size:25px;
+    color: var(--white)
+
+}
