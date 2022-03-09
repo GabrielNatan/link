@@ -7,7 +7,9 @@ function App() {
   const [open,setOpen] = useState(false)
   return (
     <div className="App">
-      <PlansTable />
+      <div className="contCenter">
+        <PlansTable />
+      </div>
     </div>
   );
 }

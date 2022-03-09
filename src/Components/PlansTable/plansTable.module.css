@@ -3,13 +3,64 @@
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    border-radius: 7px;
 }
 
 .top{
     display: flex;
     border-bottom: 1px solid var(--base-light-grey);
+    display: flex;
+}
+
+.left{
+    display: flex;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.right input{
+    border: 1px solid var(--base-light-grey);
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
 }
 .tabs{
     padding: 25px;
 }
+.tabs.active{
+    border-bottom: 2px solid var(--primary);
+}
 
+table{
+    border-collapse: collapse;
+}
+
+thead tr{
+    background-color: var(--base-ultralight-grey);
+    height: 60px;
+    color: var(--base-ultradark-grey);
+    font-size: var(--body-primary-sm);
+    text-align: left;
+}
+
+thead th{
+    padding: 0 20px 0 50px ;
+}
+
+tbody tr{
+    border-bottom: 1px solid var(--base-light-grey);
+}
+tbody td{
+    height: 50px;
+    padding-left: 50px;
+    font-size: var(--body-primary-sm);
+}
+
+.strong{
+    font-weight: bold;
+}
