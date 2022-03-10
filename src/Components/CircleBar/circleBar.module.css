@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    max-width: 220px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+}
+
+.container img{
+    width: 20px;
+}
+
+.title{
+    color: var(--base-grey);
+}
+
+.middle{
+    flex: 1;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+.bottom strong{
+    font-size: 25px;
+}
+
+.bottom strong span{
+    color:var(--base-dark-grey);
+    font-weight: normal;
+    font-size: var(--body-secondary);
+  
+}
+
+.spanGreen{
+    font-weight: bold;
+    color: var(--warning-green);
+}
